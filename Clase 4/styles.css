@@ -1,0 +1,101 @@
+/*
+Los bloques se suelen denominar con una sola palabra o con dos palabras separadas con un guion si puede existir conflicto de estilos.
+
+.menu / .main-menu
+.gallery / .main-gallery
+
+Los elementos se nombran con el nombre del bloque al que pertenecen y su nombre con dos guiones bajos __
+
+.menu__item / .main-menu__link
+.gallery__img  / .main-gallery__item
+
+Los modificadores se nombran con el nombre del bloque al que pertenecen y su modificador con dos guiones medios --
+
+.menu__item--active
+.gallery__item--special
+
+Otras metodologías de nomenclatura CSS:
+SuitCSS
+BEMIT
+*/
+
+.main-title{text-align: center;}
+
+.header{background: lightblue;height: 50px;}
+
+.main{background:lightseagreen;height: 600px;}
+
+.footer{background: lightsalmon;height: 200px;}
+
+/* nav ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    line-height: 3;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: green
+}
+
+a{
+    color: red
+} */
+
+.main-menu{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-menu__item{
+    line-height: 3;
+}
+
+.main-menu__link{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: green;
+}
+
+.main-menu__link--active{
+    background: red;
+}
+
+/* Forma correcta según la metodología BEM */
+
+.main-form{
+
+}
+
+.main-form__label{
+
+}
+
+.main-form__submit{
+    
+}
+
+/* Esta forma no es recomendada */
+.form{
+
+}
+
+.label{
+
+}
+
+.submit{
+
+}

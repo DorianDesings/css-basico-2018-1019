@@ -1,0 +1,105 @@
+/* Selector de etiqueta */
+    /* p{
+        color: red
+    }
+
+    h1{
+        color: blue;
+    } */
+
+/* Selectores de clase */
+    /* .title{
+        color: green;
+    }
+
+    .text{
+        color: blueviolet
+    } */
+
+/* Selectores de ID */
+    /* #title{
+        color: aqua;
+    }
+
+    #text{
+        color: blueviolet;
+    } */
+
+/* Selectores universales */
+
+    /* *{
+        color: red;
+    } */
+
+/* Selectores de atributo */
+
+/* Seleccionar los elementos que tienen ese atributo */
+[href]{
+    color: green;
+}
+
+/* Seleccionar los elementos que tienen ese atributo y ese valor*/
+[href="#"]{
+    color: red;
+}
+
+/* Seleccionar los elementos que tienen ese atributo al menos ese valor una vez*/
+[class~="verde"]{
+    color: green;
+}
+
+/* Seleccionar los elementos que tienen ese atributo y exactamente ese valor o empieze por el valor seguido de un guión*/
+[class|="verde"]{
+    color: blue;
+}
+
+/* Seleccionar los elementos que tienen ese atributo y empiezan por ese valor*/
+[class^="rojo"]{
+    color:purple;
+}
+
+/* Seleccionar los elementos que tienen ese atributo y terminan por ese valor*/
+[class$="rojo"]{
+    color:steelblue;
+}
+
+/* Seleccionar los elementos que tienen ese atributo y contengan ese valor*/
+[class*="rojo"]{
+    color:brown;
+}
+
+/* Selectores combinadores */
+
+/* Selector de hermano adyacente */
+
+/* Selecciona al hermano que esté justo por debajo de el. El estilo se aplica al hermano inferior */
+h1 + h2{
+    color:red;
+}
+
+h2 + h2{
+    color: blue;
+}
+
+/* Selector de hermano general */
+
+/* Selecciona todos los hermanos que esté por debajo de el. El estilo se aplica a todos los hermanos */
+h1 ~ h3{
+    color: green;
+}
+
+/* Selectores descendentes */
+
+/* Selecciona todos los hijos. El estilo se aplica a todos los hijos */
+div span{
+    color: red;
+}
+
+/* Selector de hijo directo */
+
+/* Selecciona todos los hijos que sean directos, es decir que no estén dentro de otras etiquetas. El estilo se aplica a todos los hijos */
+p > span{
+    color: blue;
+}
+
+

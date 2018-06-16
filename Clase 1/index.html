@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi primera página web</title>
+  <!-- Insertar CSS en la cabecera, no recomendable salvo que tengamos una sóla página o para pruebas 
+    <style>
+    p{
+      color: red;
+    }
+  </style> 
+
+  Estilo en línea, no recomendado para estilos estáticos, sólo para estilos que se tienen que calcular en tiempo real, con JavaScript por ejemlo.
+   <h1 style="color:blue">Soy un encabezado principal</h1>
+
+   Trayendo una hoja de estilos externa, la forma más recomendada para poder reutlizar el código
+   <link rel="stylesheet" href="styles-dist.css">
+
+   Importando con la regla @import url(), esta forma no se recomienda para evitar posibles fallos. 
+   <style>
+  @import url("styles-dist.css");
+</style>
+-->
+
+<link rel="stylesheet" href="styles-dist.css">
+</head>
+<body>
+  <h1>Soy un encabezado principal</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit autem vitae adipisci deserunt repellat. Sit sunt autem, possimus, quas quis architecto molestiae est eligendi quo libero quod eius ratione inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo error odio atque maxime consectetur odit ab facilis iure, mollitia veritatis fuga ullam exercitationem, vitae at aliquid officiis reprehenderit</p>
+
+  <h1 class="title">Soy un encabezado principal</h1>
+  <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit autem vitae adipisci deserunt repellat. Sit sunt autem, possimus, quas quis architecto molestiae est eligendi quo libero quod eius ratione inventore.</p>
+
+  <h1 id="title">Soy un encabezado principal</h1>
+  <p id="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit autem vitae adipisci deserunt repellat. Sit sunt autem, possimus, quas quis architecto molestiae est eligendi quo libero quod eius ratione inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo error odio atque maxime consectetur odit ab facilis iure, mollitia veritatis fuga ullam exercitationem, vitae at aliquid officiis reprehenderit velit aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquid ratione, hic animi magni dolorem cupiditate explicabo, amet nisi corporis, molestiae architecto impedit ex optio minima iusto voluptatibus quae sunt?</p>
+
+  <a class="rojo verde" href="">Enlace 1 rojo verde</a>
+  <a class="rojo" href="#">Enlace 2 rojo</a>
+  <a class="verde" href="#">Enlace 3 verde</a>
+  <a class="verde rojo" href="#">Enlace 4 verde rojo</a>
+
+
+  <h1>Título</h1>
+  <h2>Subtítulo</h2>
+  <h2>Otro subtítulo</h2>
+  <h3>Otro subtítulo más</h3>
+  <h3>Otro subtítulo más más</h3>
+
+  <div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque magni quidem recusandae non reiciendis ipsum earum, nam, <span>SOY UN SPAN</span> tenetur molestias, quia perferendis eligendi ratione eum at cumque facilis harum! Veritatis, quia.</p>
+    <span>OTRO SPAN</span>
+  </div>
+</body>
+</html>
