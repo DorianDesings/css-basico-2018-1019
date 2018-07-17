@@ -3,7 +3,16 @@ Margin: 1em; (top right bottom left)
 Margin: 1em 2em; (Y X)
 Margin: 1em 2em 3em; (top, X, bottom)
 Margin: 1em 2em 3em 4em; (top right bottom left)
- */
+
+Podemos aplicar las propiedades por separado
+
+Margin-top: 1em;
+Margin-rigt: 2em;
+Margin-bottom: 3em;
+Margin-left: 4em;
+
+*/
+
 
 .box1{
     width: 200px;
@@ -17,7 +26,15 @@ Padding :  1em; (top right bottom left)
 Padding :  1em 2em; (Y X)
 Padding : 1em 2em 3em; (top, X, bottom)
 Padding : 1em 2em 3em 4em; (top right bottom left)
- */
+
+Podemos aplicar las propiedades por separado
+
+Padding-top: 1em;
+Padding-rigt: 2em;
+Padding-bottom: 3em;
+Padding-left: 4em;
+
+*/
 
 .box2{
     width: 200px;
