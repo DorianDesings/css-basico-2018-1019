@@ -1,0 +1,35 @@
+/* 
+Margin: 1em; (top right bottom left)
+Margin: 1em 2em; (Y X)
+Margin: 1em 2em 3em; (top, X, bottom)
+Margin: 1em 2em 3em 4em; (top right bottom left)
+ */
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background: lightgreen;
+    margin: 1em 2em 3em 4em;
+}
+
+/* 
+Padding :  1em; (top right bottom left)
+Padding :  1em 2em; (Y X)
+Padding : 1em 2em 3em; (top, X, bottom)
+Padding : 1em 2em 3em 4em; (top right bottom left)
+ */
+
+.box2{
+    width: 200px;
+    height: 200px;
+    background: lightcoral;
+    border: 2px solid blue;
+    padding: 1em 2em 3em 4em;
+}
+
+.box2-content{
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    border: 2px solid red;
+}
