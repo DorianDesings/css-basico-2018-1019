@@ -21,64 +21,66 @@ border-left-(width | style | color)
 
 */
 
-[class*=box]{
+[class*=box] {
     width: 200px;
     height: 200px;
     margin: 2em;
 }
 
-.box1{
+.box1 {
     background: yellowgreen;
     border: 5px solid red;
-    border-top-width:200px;
+    border-top-width: 200px;
     border-top-color: transparent;
 }
 
-.box2{
+.box2 {
     background: lightseagreen;
-    border-left-width:5px; 
-    border-left-style:dotted; 
-    border-left-color:blue; 
+    border-left-width: 5px;
+    border-left-style: dotted;
+    border-left-color: blue;
 }
 
-.box3{
+.box3 {
     background: lightcoral;
     border: 5px dashed blue;
 }
 
-.box4{
+.box4 {
     background: yellowgreen;
     border: 5px double blue;
 }
 
-.box5{
+.box5 {
     background: lightseagreen;
     border: 5px groove blue;
 }
 
-.box6{
+.box6 {
     background: lightcoral;
     border: 5px ridge blue;
 }
 
-.box7{
+.box7 {
     background: yellowgreen;
     border: 5px inset blue;
 }
 
-.box8{
+.box8 {
     background: lightseagreen;
     border: 5px outset blue;
 }
 
 /* initial es la propiedad que tuviera por defecto, en este caso es none */
-.box9{
+
+.box9 {
     background: lightcoral;
     border: 5px initial blue;
 }
 
 /* inherit es la propiedad heredada, si el padre tuviera border pues cogería ese estilo */
-.box10{
+
+.box10 {
     background: yellowgreen;
     border: 5px inherit blue;
 }
