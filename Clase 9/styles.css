@@ -1,0 +1,20 @@
+/* 
+Position
+
+Flujo HTML -> Es el orden en el que aparecen los elementos en el documento
+Espacio -> Es el espacio que ocupa un elemento en el documento
+
+*/
+
+.title {
+    text-align: center;
+    font-size: 3em;
+}
+
+p {
+    font-size: 2em;
+}
+
+.parrafo-1{
+    display: none;
+}
