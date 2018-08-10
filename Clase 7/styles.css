@@ -18,7 +18,6 @@ border-top-(width | style | color)
 border-right-(width | style | color)
 border-bottom-(width | style | color)
 border-left-(width | style | color)
-
 */
 
 [class*=box] {
