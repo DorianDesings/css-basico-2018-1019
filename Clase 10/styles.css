@@ -1,0 +1,32 @@
+/* 
+Position relative
+
+Su punto de referencia (contexto) es el punto donde aparece en el flujo
+
+Al ser un elemento posicionado lo podemos mover en los 3 ejes X Y Z
+*/
+
+.box1, .box2{
+    width: 250px;
+    height: 250px;
+    margin: 1em auto;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.box1{
+    background:lightgreen;
+    position: relative;
+    /* top right bottom left z-index */
+    /* z-index: 1; Si declaramos z-index automaticamente se dibuja por encima por tener un valor mayor que el de por defecto (0)*/
+    /* top y left tienen preferencia ante bottom y right */
+   /*  right: -500px;
+    bottom: 30px; */
+
+    top: 500px;
+}
+
+.box2{
+    background:lightcoral;
+    position: relative;
+}
