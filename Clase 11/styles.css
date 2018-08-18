@@ -1,0 +1,63 @@
+/* 
+Position absolute
+
+El elemento no conserva su espacio en el flujo.
+
+Si no tiene dimensiones declaradas, sus dimensiones se ajustan al contenido.
+
+Su punto de referencia (contexto) es el elemento que lo contenga posicionado más cercano, si no encuentra ninguno será el viewport (el espacio visible en pantalla)
+
+Al ser un elemento posicionado lo podemos mover en los 3 ejes X Y Z
+*/
+
+.container {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    position: relative;
+}
+
+[class^=box] {
+    width: 50px;
+    height: 50px;
+}
+
+.box1 {
+    border: 4px solid lightcoral;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.box2 {
+    border: 4px solid blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.box3 {
+    border: 4px solid green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.box4 {
+    border: 4px solid lightseagreen;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.box5 {
+    border: 4px solid darkorange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
