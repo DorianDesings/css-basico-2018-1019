@@ -1,0 +1,33 @@
+/* 
+Position fixed
+
+El elemento no conserva su espacio en el flujo.
+
+Si no tiene dimensiones declaradas, sus dimensiones se ajustan al contenido.
+
+Su punto de referencia (contexto) es el viewport (el espacio visible en pantalla)
+
+Al ser un elemento posicionado lo podemos mover en los 3 ejes X Y Z
+*/
+
+body{
+    padding-top: 6em;
+}
+
+.menu{
+    background:darkcyan;
+    padding: .5em;
+    text-align: center;
+    font-size: 2em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.title{
+    margin: 0;
+}
+
+.text{
+
+}
