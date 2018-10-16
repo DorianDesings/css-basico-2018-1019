@@ -1,0 +1,121 @@
+/*
+Dynamic
+    :link (links) - Link no visitado
+    :visited (links) - Link visitado
+    :active (links) - El momento del click
+    :hover - Al poner el mouse sobre el elemento
+    :focus - Cuando el elemento tiene el foco
+
+Target
+    :target - Elemento es objetivo de un marcador o ancla
+
+Language
+    :lang() - Elemento que contiene el atributo lang que especifiquemos
+*/
+
+/* .link:link {
+    color: red;
+}
+
+.link:visited {
+    color: chartreuse
+}
+
+.link:active {
+    color: cyan;
+    background: red;
+} */
+
+/* .title:hover {
+    color: blueviolet;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    background: red;
+    padding: .5em;
+    border-radius: 10px;
+    color: #FFF;
+}
+
+.button:active {
+    transform: scale(.9)
+}
+
+.button:hover {
+    color: red;
+    background: #fff;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.input:focus {
+    background: green;
+} */
+
+/* .menu {
+    background: lightblue;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.text {
+    margin-top: 500px;
+    margin-bottom: 500px;
+}
+
+.text:target {
+    padding-top: 75px;
+} */
+
+.span {
+    display: block;
+}
+
+.span:lang(en) {
+    color: red;
+}
+
+.span:lang(es) {
+    color: blue;
+}
+
+/*
+UI States
+    :enabled
+    :disabled
+    :checked
+    :in-range
+    :out-of-range
+    :required
+    :optional
+    :valid
+    :invalid
+    :fullscreen
+*/
+
+/*
+Structural
+    :root
+    :nth-child()
+    :nth-last-child()
+    :nth-of-type()
+    :nth-last-of-type()
+    :first-child
+    :last-child
+    :first-of-type
+    :last-of-type
+    :only-child
+    :only-of-type
+    :empty
+
+Negation
+    :not()
+*/
