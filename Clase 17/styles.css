@@ -90,36 +90,3 @@ Language
             color: blue;
         }
         */
-
-/*
-UI States
-    :enabled
-    :disabled
-    :checked
-    :in-range
-    :out-of-range
-    :required
-    :optional
-    :valid
-    :invalid
-    :fullscreen
-*/
-
-/*
-Structural
-    :root
-    :nth-child()
-    :nth-last-child()
-    :nth-of-type()
-    :nth-last-of-type()
-    :first-child
-    :last-child
-    :first-of-type
-    :last-of-type
-    :only-child
-    :only-of-type
-    :empty
-
-Negation
-    :not()
-*/
