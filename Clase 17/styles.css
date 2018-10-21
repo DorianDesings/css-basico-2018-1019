@@ -13,79 +13,83 @@ Language
     :lang() - Elemento que contiene el atributo lang que especifiquemos
 */
 
-/* .link:link {
-    color: red;
-}
+/*
+    ===Ejercicios PSEUDOCLASES I===
 
-.link:visited {
-    color: chartreuse
-}
+        .link:link {
+            color: red;
+        }
 
-.link:active {
-    color: cyan;
-    background: red;
-} */
+        .link:visited {
+            color: chartreuse
+        }
 
-/* .title:hover {
-    color: blueviolet;
-}
+        .link:active {
+            color: cyan;
+            background: red;
+        }
 
-.button {
-    text-decoration: none;
-    display: inline-block;
-    background: red;
-    padding: .5em;
-    border-radius: 10px;
-    color: #FFF;
-}
+        .title:hover {
+            color: blueviolet;
+        }
 
-.button:active {
-    transform: scale(.9)
-}
+        .button {
+            text-decoration: none;
+            display: inline-block;
+            background: red;
+            padding: .5em;
+            border-radius: 10px;
+            color: #FFF;
+        }
 
-.button:hover {
-    color: red;
-    background: #fff;
-    border: 1px solid;
-    border-radius: 10px;
-}
+        .button:active {
+            transform: scale(.9)
+        }
 
-.input:focus {
-    background: green;
-} */
+        .button:hover {
+            color: red;
+            background: #fff;
+            border: 1px solid;
+            border-radius: 10px;
+        }
 
-/* .menu {
-    background: lightblue;
-    display: block;
-    padding: 1em;
-    text-decoration: none;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
+        .input:focus {
+            background: green;
+        }
 
-.text {
-    margin-top: 500px;
-    margin-bottom: 500px;
-}
+        .menu {
+            background: lightblue;
+            display: block;
+            padding: 1em;
+            text-decoration: none;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
 
-.text:target {
-    padding-top: 75px;
-} */
+        .text {
+            margin-top: 500px;
+            margin-bottom: 500px;
+        }
 
-.span {
-    display: block;
-}
+        .text:target {
+            padding-top: 75px;
+        }
 
-.span:lang(en) {
-    color: red;
-}
+        .span {
+            display: block;
+        }
 
-.span:lang(es) {
-    color: blue;
-}
+        .span:lang(en) {
+            color: red;
+        }
+
+        .span:lang(es) {
+            color: blue;
+        }
+        */
 
 /*
 UI States
