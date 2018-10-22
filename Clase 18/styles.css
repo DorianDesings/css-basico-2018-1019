@@ -1,0 +1,75 @@
+.input,
+.label {
+    display: block;
+}
+
+/*
+UI States
+    :enabled
+    :disabled
+    :checked
+    :in-range
+    :out-of-range
+    :required
+    :optional
+    :valid
+    :invalid
+    :read-only
+    :read-write
+*/
+
+.input:enabled {
+    background: red;
+}
+
+.input:disabled {
+    background: yellow;
+    border: none;
+}
+
+.input:checked + label{
+    font-size: 2em;
+}
+
+.input:in-range{
+    background: green;
+}
+
+.input:out-of-range{
+    background: blue;
+}
+
+.input:optional{
+    background: purple;
+}
+
+.input:required{
+    background: lightcoral;
+}
+
+.input:valid{
+    background: green;
+}
+
+.input:invalid{
+    background: red;
+}
+
+/*
+Structural
+    :root
+    :nth-child()
+    :nth-last-child()
+    :nth-of-type()
+    :nth-last-of-type()
+    :first-child
+    :last-child
+    :first-of-type
+    :last-of-type
+    :only-child
+    :only-of-type
+    :empty
+
+Negation
+    :not()
+*/
