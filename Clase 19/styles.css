@@ -1,0 +1,91 @@
+/*
+
+Structural
+    :root - Representa la raiz del documento (html) usando una pseudoclase tenemos más especificidad que si usáramos html
+
+    :empty - Esta pseudoclase se aplica para los elementos vacios, es decir, etiquetas que no tienen contenido
+    
+    -child
+        :first-child - Selecciona al primer hijo (independientemente del tipo de etiqueta)
+        :last-child - Selecciona al ultimo hijo (independientemente del tipo de etiqueta)
+
+        :nth-child(n) - Selecciona al hijo n(independientemente del tipo de etiqueta)
+        :nth-last-child(n) Selecciona al hijo n empezando a contar desde el último (independientemente del tipo de etiqueta)
+        :only-child Selecciona al hijo unico(independientemente del tipo de etiqueta)
+    
+    -type
+        :first-of-type
+        :last-of-type
+        :nth-of-type()
+        :nth-last-of-type()
+        :only-of-type
+
+    Valores posibles:
+        odd - Impares
+        even - Pares
+        numeros enteros - 2,3,4...
+        equaciones (1n,3n,4n+1,n+4,...)
+            n es un multiplicador va de 0 hasta que se quede sin elementos
+    
+Negation
+    :not() - Selecciona al elemento que no cumpla la condición, se puede poner cualquier selector salvo otro :not
+*/
+
+/* .paragraph{
+    padding: .5em;
+    background:lightblue;
+}
+
+.paragraph:empty{
+    all:unset;
+} */
+
+/* .paragraph:first-child {
+    background: red;
+}
+
+.paragraph:last-child {
+    background: blue;
+} */
+
+/* .paragraph:nth-child(odd) {
+    background: lightcoral;
+} */
+
+/* .paragraph:nth-child(even) {
+    background: lightcoral;
+} */
+
+/* .paragraph:nth-child(3) {
+    background: lightcoral;
+} */
+
+/* .paragraph:nth-child(3n) {
+    /* n primero vale 0, después 1, después 2 y por último 3
+    background: lightcoral;
+} */
+
+/* .paragraph:nth-child(3n + 1) {
+    background: lightcoral;
+} */
+
+/* .paragraph:nth-child(n + 4) {
+    background: lightcoral;
+}
+ */
+
+/* .paragraph:nth-last-child(n+3) {
+    background: lightcoral;
+} */
+
+/* .paragraph:only-child{
+    background: lightseagreen;
+} */
+
+/* .paragraph:first-of-type{
+    background: red;
+} */
+
+.paragraph:not(.first) {
+    background: green;
+}
