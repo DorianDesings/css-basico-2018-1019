@@ -1,0 +1,61 @@
+/*
+
+Especificación w3c:
+https://www.w3.org/Style/Examples/007/fonts.en.html
+https://www.w3.org/TR/CSS22/fonts.html#font-family-prop
+
+A los tipos de letra que existen se les denomina fuentes o tipografía
+
+Familias tipográficas
+    Tienen nombre propio
+      Arial, Times New Roman, open sans, ubuntu
+
+Familias genéricas o seguras
+    Su nombre se basa en sus características
+      serif: Tienen un adorno en los remates
+      sans-serif: Tienen un corte seco en los remates
+      cursive: emulan tipografia manuscrita
+      fantasy: Letra decorativa
+      monospace: Todos los caracteres tienen el mismo ancho
+
+FONT
+    font-family: Establece la familia tipográfica
+        Se utiliza el nombre propio de la fuente o una familia genérica, se recomienda utilizar SIEMPRE fuentes de reserva ('Times New Roman', Times, serif)
+    font-size: Establece el tamaño de fuente
+        Se define en unidades:
+            px: pixeles (medida absoluta)
+            em: medida relativa al contexto (al padre)
+            rem: medida relativa al html
+            %: medida relativa al tamaño actual
+
+            vh: medida relativa al height del viewport
+            vw: media relativa al width del viewport
+            vmin: medida relativa al valor mínimo de viewport
+            vmax: medida relativa al valor máximo de viewport
+
+    font-weight: Establece el grosor de la fuente
+        bold | normal | 100-900
+
+    font-style: Establece el estilo de la tipografía
+        normal | italic | oblique
+
+*/
+
+body {
+    font-size: 30px;
+}
+
+.title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-size: 200%; */
+   /*  font-size: 10vmin; */
+   font-style: oblique;
+}
+
+.span {
+    /* font-size: 200%; */
+}
+
+.paragraph{
+    font-weight: lighter;
+}
