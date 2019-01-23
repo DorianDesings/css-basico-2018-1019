@@ -1,0 +1,47 @@
+/*
+TEXT
+    Text-transform: Transforma el texto a mayúsculas, minúsculas, etc.
+        lowercase (minusculas) | uppercase (mayusculas) | capitalize (primera letra de cada palabra en mayusculas)
+
+    text-align: Alinea el texto del elemento a la izquierda, derecha, etc. SOLO ELEMENTOS DE BLOQUE (excepto en botones, que aunque sean de elementos en línea funciona)
+        center | left | right | justify
+
+    text-decoration: Establece la decoración del texto
+        overline | line-through | underline | none
+
+    text-indent: mueve la primera linea de un de texto. SOLO ELEMENTOS DE BLOQUE
+*/
+
+/* .title {
+        text-transform: capitalize;
+    }
+
+    .paragraph {
+        text-align: justify;
+        text-indent: 50px;
+    }
+
+    .link {
+        text-decoration: none;
+    } */
+
+/*
+OTHER
+    line-height: establece la altura de la linea
+    letter-spacing: establece la separacion de las letras con una medida en cualquier unidad
+*/
+
+.box {
+    width: 150px;
+    height: 150px;
+    background: red;
+}
+
+.box__item {
+    text-align: center;
+    line-height: 150px;
+}
+
+.paragraph {
+    letter-spacing: 5px;
+}
