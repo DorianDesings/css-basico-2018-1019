@@ -1,0 +1,77 @@
+/* 
+    Normalmente necesitamos resetear los estilos por defecto de una lista
+        margin-top:0;
+        margin-bottom:0;
+        padding-left:0;
+
+    Hay tres propiedades para las listas, se pueden aplicar al padre o a los elementos de la lista
+
+    list-style-type: Establece el estilo de viñeta
+        disc
+        circle
+        square
+        decimal
+        decimal-leading-zero
+        lower-roman
+        upper-roman
+        lower-greek
+        lower-latin
+        upper-latin
+        armenian
+        georgian
+        lower-alpha
+        upper-alpha
+
+    list-style-position: Hace que las viñetas se coloquen por dentro o por fuera del elemento
+        outside | inside
+        
+    list-style-image: Pone una imagen en lugar de la viñeta, no se suele utilizar porque hay formas mucho más eficientes de hacerlo
+        url(imagen)
+
+    Normamente se suele usar el shorthand list-style
+*/
+
+/* .list {
+    list-style-type: lower-latin;
+} */
+
+/* .list {
+    list-style-image: url(check.png)
+} */
+
+.list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+/* .list__item {
+    background: red;
+} */
+
+/* .list__item::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url(check.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 1em;
+} */
+
+.list__item {
+    /* background-image: url(check.png);
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat; */
+    /* padding-left: 2em;
+    background: url(check.png) 0 0 / contain no-repeat; */
+}
+
+.list__item{
+    float: left;
+    padding-right: 1em;
+}
