@@ -1,0 +1,25 @@
+/* 
+Sitios gratuitos para fuentes
+    https://www.dafont.com/es/
+    https://www.1001fonts.com/
+
+    Analizar fuentes web
+        whatFont
+*/
+
+/* .title {
+    font-family: 'Raleway', sans-serif;
+}
+
+.paragraph {
+    font-family: 'Montserrat', sans-serif;
+} */
+
+@font-face {
+    src: url('assets/fonts/Music Magic Personal Use/Music Magic Personal Use.ttf');
+    font-family: 'myFont';
+}
+
+.title {
+    font-family: myFont, serif;
+}
