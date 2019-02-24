@@ -1,0 +1,62 @@
+/*
+    Colores:
+        Hay varias formas de dar color a los elementos
+            - Palabras clave https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+
+            - RGB: es una función de color que recibe 3 valores separados por comas, siendo 0 el mínimo y 255 el máximo
+            rgb(0,0,0) sería un negro y rgb(255,255,255) sería blanco.
+
+            -RGBA: Es una variación de RGB con un cuarto valor que sería el canal alpha, con este valor controlamos la opacidad. Sus valores van de 0 a 1, siendo 0 transparente y 1 opaco.
+
+            - Hexadecimal: La notación hexademal tiene 16 valores, 0-1-2-3-4-5-6-7-8-9-A-B-C-D-E-F. Se escriben con un # al inicio y se pueden usar 3 o 6 valores. Si se usan 6 valores deben ir en parejas #ffffff, pero cuando las parejas tienen el mismo valor se suele obviar y se ponen solo 3 valores #fff.
+            El código hexadecimal se representa con los canales rgb de esta forma #rgb o #rrggbb. Utilizar el modo hexadecimal cuando se buscan colores especiales se queda corto si no utilizamos un preprocesador, ya que no podemos controlar la luminosidad, la saturación, etc.
+            Cuando los 3/6 valores son iguales es un color neutro, #000 sería negro y #fff blanco, y todos los valores intermedios serían grises con mayor o menor luminosidad #666, #aaa
+
+            HSL(hue, saturation, lightness): Es una función de color que nos permite controlar el tono, la saturación y la luminosidad. Es el modo de color que se recomienda para tener un control total sobre los colores
+            hue es el ángulo en la rueda cromática. Los valores van de 0 a 360 grados
+            saturation es la intensidad del color. Los valores van de 0 (gris) a 100% (color puro) 
+            lightness es la intensidad de la luz. Los valores van de 0 (negro) a 100% (blanco)
+
+            HSLA: Exactamente igual que RGBA
+*/
+
+body{
+    background: #333;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: .5em;
+    text-align: center;
+    line-height: 200px;
+    font-size: 2.5em;
+    display: inline-block;
+}
+
+.box--color{
+    color: blueviolet;
+    background-color: aquamarine;
+}
+
+.box--rgb{
+    color: rgb(255, 125, 4);
+}
+
+.box--rgba{
+    background-color: rgba(255, 125, 4, .4);
+}
+
+.box--hexa{
+    background-color: #00ff80;
+}
+
+.box--hsl{
+    background-color: hsl(120,26%,30%);
+}
+
+.box--hsla{
+    background-color: hsla(120,26%,30%,.8);
+}
+
