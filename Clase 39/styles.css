@@ -24,7 +24,7 @@ Flexbox
 
         align-self: Se aplica al flex-item. Sirve para alinear un elemento en concreto en el cross-axis
 
-    TRUCO EXTRA:
+    TRUCO EXTRA: Al utilizar auto con la propiedad margin lo que sucede es que el elemento se va al lado contrario del margen que dimos, si ponemos margin:auto el elemento se centra completamente, tanto vertical como horizontalmente
 */
 
 .flex-container {
