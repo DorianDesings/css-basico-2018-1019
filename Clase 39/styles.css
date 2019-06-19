@@ -1,0 +1,91 @@
+/* 
+Flexbox
+    Alineamiento
+    Estas propiedades para alinear se aplican SIEMPRE al flex-container
+
+    Existen propiedades para el main-axis y para el cross-axis
+    main-axis:
+        justify-content: flex-start(default) | center | space-between | space-around | space-evenly | flex-end
+
+        flex-start alinea los elementos al principio del main axis
+        center centra los elementos en la mitad del main axis
+        flex-end alinea los elementos al final del main axis
+
+        space-between distribuye los items a la misma distancia y no deja espacio exterior ni el primer ni el último flex-end.
+        
+        space-around distribuye los items a la misma distancia y deja un espacio exterior en el primero y en el último flex-item
+
+        space-evenly distribuye los items y los espacios exteriores del primer y último flex-item dejando la misma distancia entre todos.
+    cross-axis
+        align-items: Una sola línea.
+            flex-start | center | flex-end | stretch(default) | baseline
+        align-content:varias líneas
+            flex-start | center | flex-end | stretch(default) | baseline
+
+        align-self: Se aplica al flex-item. Sirve para alinear un elemento en concreto en el cross-axis
+
+    TRUCO EXTRA: Al utilizar auto con la propiedad margin lo que sucede es que el elemento se va al lado contrario del margen que dimos, si ponemos margin:auto el elemento se centra completamente, tanto vertical como horizontalmente
+*/
+
+.flex-container {
+    background-color: #FCA17D;
+    height: 400px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    width: 50px;
+    height: 50px;
+    margin-bottom: auto;
+    margin-left: auto;
+    color: aliceblue;
+    background-color: #9A348E;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* .box {
+    border: 1px solid black;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+} */
+
+/* .box img {
+    max-width: 50%;
+} */
+
+/* .prices {
+    display: flex;
+    align-items: flex-start;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.prices__item {
+    width: 25%;
+    height: 300px;
+}
+
+.prices__item:first-child {
+    background: peru;
+}
+
+.prices__item:nth-child(2) {
+    background: green;
+    line-height: 20px;
+    align-self: center;
+}
+
+.prices__item:nth-child(3) {
+    background: indianred;
+    line-height: 15px;
+}
+
+.prices__item:nth-child(4) {
+    background: lightgreen;
+    line-height: 50px;
+} */
