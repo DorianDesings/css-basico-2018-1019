@@ -1,0 +1,79 @@
+/*
+
+    Ordenar elementos con grid-column y grid-row
+
+    grid-column-start: establece desde que column-line empezará el elemento
+    grid-column-end: establece hasta que column-line llega el elemento
+    grid-row-start: establece desde que row-line empezará el elemento
+    grid-row-end: establece hasta que row-line llega el elemento
+
+    Existe un shorthand que engloba las 2 propiedades
+    grid-column: start / end
+    grid-row: start / end
+
+    tanto start como end admiten valores positivos, negativos y la palabra span
+    Valor positivo: Empieza a contar las column-lines o las row-lines de izquierda a derecha
+    Valor negativo: Empieza a contar las column-lines o las row-lines de derecha a izquierda
+    span: establecemos cuantas columnas o filas ha de ocupar, span 3 es como decirle que ocupe 3 columnas
+
+    tip: Si ponemos en el valor end -1 llegará hasta el final
+
+*/
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    color: #eee;
+    font-family: sans-serif;
+    background-image: radial-gradient(circle, #b94bf8, #3a1957);
+    background-repeat: no-repeat;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+
+.grid-item {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.grid-item:nth-child(3),
+.grid-item:nth-child(4) {
+    background: orange;
+}
+
+.grid-item:first-child,
+.grid-item:nth-child(2) {
+    background: violet;
+}
+
+.grid-item:nth-child(4) {
+    grid-column-start: 1;
+    /* grid-column-end: 2; */
+    grid-row-start: 1;
+    /* grid-row-end: 2; */
+}
+
+.grid-item:nth-child(3) {
+    grid-column-start: 3;
+    grid-row-start: span 2;
+}
+
+.grid-item:nth-child(2) {
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4; */
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+}
