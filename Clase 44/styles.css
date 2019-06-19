@@ -9,7 +9,7 @@
         En el caso "simple" recibiría 2 parámetros (valores):
             repeat(nColumnas o nFilas, medida)
             grid-template-columns: repeat(4,100px) es lo mismo que grid-template-columns: 100px 100px 100px 100px;
-        Si como segundo valor añadimos más de una medida, construiremos un patrón, no hay límete de valores.
+        Si como segundo valor añadimos más de una medida, construiremos un patrón, no hay límite de valores.
             grid-template-columns: repeat(2, 100px 50px...) es lo mismo que grid-template-columns: 100px 50px 50px 100px;
 */
 
