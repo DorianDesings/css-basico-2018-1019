@@ -1,0 +1,54 @@
+/* 
+Flexbox
+    Propiedad flex: Es un shorthand que engloba las siguientes propiedades.
+        Todas las medidas se establecen en función del espacio disponible en el contenedor.
+        Todas las propiedades van en función del MAIN-AXIS.
+
+        flex-grow: Establece qué hacer cuando hay espacio sobrante. Cuantas divisiones coge el elemento. El valor es un entero desde 0 hasta n o auto
+
+        flex-shrink:Establece qué hacer cuando no hay espacio suficiente. Cuantas divisiones pierde el elemento. El valor es un entero desde 0 hasta n
+
+        flex-basis: Establece cuanto tiene que ocupar el item antes de encojer o extenderse. Flex basis prevalece ante width si el main-axis es horizontal o ante height si el main-axis es vertical. El valor es un entero desde 0 hasta n
+
+    Los valores de flex son:
+        Por defecto es 0 1 auto
+        flex:auto; equivale a 1 1 auto;
+        flex:none; equivale a  0 0 auto;
+        flex: flex-grow(obligatiorio) flex-shrink(opcional) flex-basis(opcional);
+
+
+    Order: Establece qué orden ocupará el elemento en el contenedor flex. El valor es el "peso" respecto a los valores que tengan los otros elementos. Por defecto es 0
+
+    Extra:
+        Existe un shorthand para flex-direction y flex-wrap. flex-flow: flex-direction flex-wrap. flex-flow: column wrap;
+*/
+
+.flex-container {
+    background-color: #FCA17D;
+    height: 300px;
+    width: 400px;
+    display: flex;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    background-color: #9A348E;
+}
+
+.flex-item:nth-child(2) {
+    background: lightseagreen;
+}
+
+.flex-item:nth-child(3) {
+    background: lightskyblue;
+}
+
+.flex-item:first-child {
+    background: darkgoldenrod;
+    order: 2;
+}
