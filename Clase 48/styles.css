@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    color: #eee;
+    font-family: sans-serif;
+    background-image: radial-gradient(circle, #b94bf8, #3a1957);
+    background-repeat: no-repeat;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 150px repeat(2, 1fr);
+    grid-template-areas:
+        "header header header"
+        "aside article article"
+        "footer footer -"
+}
+
+.header,
+.footer {
+    padding: 2rem 0;
+    text-align: center;
+    background: peru;
+}
+
+.header {
+    grid-area: header;
+}
+
+.aside {
+    background: hotpink;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    grid-area: aside;
+
+}
+
+.article {
+    background: royalblue;
+    padding: 1rem;
+    grid-area: article;
+
+}
+
+.footer {
+    grid-area: footer;
+}
