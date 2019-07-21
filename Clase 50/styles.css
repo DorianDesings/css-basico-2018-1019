@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    color: #eee;
+    font-family: sans-serif;
+    background-image: radial-gradient(circle, #b94bf8, #3a1957);
+    background-repeat: no-repeat;
+}
+
+.grid-container {
+    padding: 1rem;
+    background-color: #fff;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid-item {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    color:#000;
+}
+
+.nested{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+}
+
